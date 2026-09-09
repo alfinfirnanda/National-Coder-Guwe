@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Solver - Nusantara Coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=PlayFair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <i class="fa-solid fa-code"></i>
+          Nusantara Coder
+        </div>
+        
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="problem-solver.html">Problem Solver</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="nav-cta">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="detail-hero scroll-hidden">
+        <i class="fa-solid fa-bug"></i>
+        <h1>Problem Solver</h1>
+        <p>
+          Masalah yang paling sering dialami pemula saat belajar coding — dan
+          cara mengatasinya
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>1. Bingung Harus Mulai Belajar Bahasa Apa Duluan</h3>
+          </div>
+          <p class="problem-desc">
+            Banyak pemula stuck di tahap paling awal karena bingung pilih
+            Python, JavaScript, Java, atau bahasa lain. Akhirnya malah ga jadi
+            mulai belajar sama sekali
+          </p>
+          <div class="solution-box">
+            <div class="solution-label">
+              <i class="fa-solid fa-lightbulb"></i> Solusi
+            </div>
+            <p>
+              Pilih satu bahasa berdasarkan tujuan, bukan berdasarkan "bahasa
+              terbaik". Mau bikin website? Mulai JavaScript. Mau ke AI/data?
+              Mulai Python. Jangan pindah-pindah bahasa sebelum benar-benar
+              paham dasar dari satu bahasa dulu
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>2. Paham Teori Tapi Ga Bisa Praktik Sendiri</h3>
+          </div>
+          <p class="problem-desc">
+            Habis nonton tutorial atau baca materi, kelihatannya ngerti — tapi
+            begitu disuruh bikin program sendiri dari nol, tiba-tiba blank
+          </p>
+          <div class="solution-box">
+            <div class="solution-label">
+              <i class="fa-solid fa-lightbulb"></i> Solusi
+            </div>
+            <p>
+              Ini normal dan namanya "tutorial hell". Solusinya: setiap habis
+              belajar satu konsep, langsung praktik bikin proyek kecil tanpa
+              nonton tutorial lagi, walau hasilnya jelek atau error. Ngoding itu
+              skill yang dibangun dari nyoba-nyoba, bukan dari nonton doang
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>3. Panik dan Nyerah Begitu Muncul Error</h3>
+          </div>
+          <p class="problem-desc">
+            Baru lihat tulisan merah error di layar udah langsung down duluan,
+            padahal errornya kadang cuma typo kecil atau titik koma yang lupa
+            ditulis
+          </p>
+          <div class="solution-box">
+            <div class="solution-label">
+              <i class="fa-solid fa-lightbulb"></i> Solusi
+            </div>
+            <p>
+              Error itu bagian normal dari coding, bukan tanda kamu gagal.
+              Biasakan baca pesan errornya pelan-pelan — biasanya udah kasih tau
+              baris berapa dan masalahnya apa. Kalau masih bingung, copy pesan
+              errornya dan cari di Google atau tanya AI, hampir semua error
+              pemula udah pernah dialami orang lain
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>4. Ngerasa Ketinggalan Dibanding Orang Lain</h3>
+          </div>
+          <p class="problem-desc">
+            Lihat orang lain di media sosial udah jago bikin aplikasi keren,
+            sementara diri sendiri masih struggling bikin program sederhana.
+            Jadi minder dan berpikir "mungkin aku emang ga bakat coding"
+          </p>
+          <div class="solution-box">
+            <div class="solution-label">
+              <i class="fa-solid fa-lightbulb"></i> Solusi
+            </div>
+            <p>
+              Yang keliatan di media sosial itu hasil akhir, bukan proses gagal
+              berkali-kali di baliknya. Fokus bandingin progress diri sendiri
+              hari ini vs kemarin, bukan sama orang lain yang udah belajar lebih
+              lama. Konsisten sedikit-sedikit jauh lebih penting daripada cepat
+              tapi berhenti di tengah jalan
+            </p>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link scroll-hidden">&larr; Kembali ke Home</a>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

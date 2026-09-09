@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Coder Inspiration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- ================= LOADER ================= -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            <i class="fa-solid fa-code"></i>
+
+        </div>
+
+        <h1>Nusantara Coder</h1>
+
+        <p>Loading Amazing Experiences...</p>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="container">
+
+<nav class="navbar">
+
+    <div class="nav-logo">
+        <i class="fa-solid fa-code"></i>
+        <span>Nusantara Coder</span>
+    </div>
+
+    <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="#problem">Problem Solver</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-cta"
+            onclick="location.href='#languages'">
+            Get Started
+        </button>
+    </div>
+
+</nav>
+
+
+
+<section class="hero scroll-hidden">
+
+    <h1>Nusantara Coder Inspiration</h1>
+
+    <div class="divider"></div>
+
+    <p class="hero-subtitle">
+        Learn Programming From Scratch,
+        Solve Real Problems,
+        Build Amazing Projects.
+    </p>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section scroll-hidden">
+
+    <h2>Find Your Programming Path</h2>
+
+    <p>
+        Search programming languages, tutorials, or coding topics.
+    </p>
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Java, Python, JavaScript..."
+        >
+
+    </div>
+
+</section>
+
+<!-- ================= ROADMAP ================= -->
+
+<section class="roadmap scroll-hidden" id="roadmap">
+
+    <div class="section-title">
+        <h2>Beginner Coding Roadmap</h2>
+        <p>Follow this learning path to become a web developer.</p>
+    </div>
+
+    <div class="roadmap-progress">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <p class="progress-text">
+        Progress :
+        <span id="progressPercent">0%</span>
+    </p>
+
+    <div class="roadmap-list">
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>HTML Fundamentals</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>CSS Styling</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>JavaScript Basics</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>Git & GitHub</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>Responsive Design</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>REST API</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>Framework (React / Vue)</span>
+        </div>
+
+        <div class="roadmap-item">
+            <input type="checkbox" class="roadmap-check">
+            <span>Build Portfolio Website</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="languages" class="lang-cards">
+<div class="lang-card-2 scroll-hidden">
+
+<i class="fa-brands fa-java"></i>
+
+<h3>Java</h3>
+
+<div class="mini-divider"></div>
+
+<p>
+Java is widely used for Android development,
+desktop software, and enterprise applications.
+</p>
+
+<a href="java.html" class="explore-btn">
+Explore Java
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+
+
+<div class="lang-card-2 scroll-hidden">
+
+<i class="fa-brands fa-js"></i>
+
+<h3>JavaScript</h3>
+
+<div class="mini-divider"></div>
+
+<p>
+The programming language that makes websites
+interactive through animation, games, and dynamic content.
+</p>
+
+<a href="javascript.html"
+class="explore-btn">
+Explore JavaScript
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+
+
+<div class="lang-card-2 scroll-hidden">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>C++</h3>
+
+<div class="mini-divider"></div>
+
+<p>
+A fast language used for game development,
+desktop applications, and operating systems.
+</p>
+
+<a href="cpp.html"
+class="explore-btn">
+Explore C++
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+
+
+<div class="lang-card-2 scroll-hidden">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>Python</h3>
+
+<div class="mini-divider"></div>
+
+<p>
+Simple and beginner-friendly language for AI,
+Machine Learning, Data Science, and Automation.
+</p>
+
+<a href="python.html"
+class="explore-btn">
+Explore Python
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="quote-footer scroll-hidden">
+
+<p>
+"Code is like humor. When you have to explain it,
+it's bad."
+</p>
+
+<span>
+— Cory House
+</span>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats scroll-hidden" id="stats">
+
+    <div class="section-title">
+        <h2>Our Numbers</h2>
+        <p>Sedikit pencapaian Nusantara Coder sejauh ini.</p>
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-box">
+            <h3 class="stat-number" data-target="4">0</h3>
+            <p>Programming Languages</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="stat-number" data-target="20" data-suffix="+">0</h3>
+            <p>Problem Solvers</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="stat-number" data-target="10" data-suffix="+">0</h3>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 class="stat-number" data-target="1200" data-suffix="+">0</h3>
+            <p>Visitors</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMMON ERROR DATABASE ================= -->
+
+<section class="error-db scroll-hidden" id="errors">
+
+    <div class="section-title">
+        <h2>Common Error Database</h2>
+        <p>Kumpulan pesan error yang paling sering ditemui pemula, lengkap dengan solusinya.</p>
+    </div>
+
+    <div class="error-list">
+
+        <div class="error-item">
+            <span class="error-code">404 Not Found</span>
+            <p><strong>Artinya:</strong> File yang diminta tidak ditemukan di server.</p>
+            <p><strong>Cara mengatasinya:</strong></p>
+            <ul>
+                <li>Cek kembali nama file</li>
+                <li>Cek path / lokasi file</li>
+                <li>Pastikan file ada di dalam folder yang benar</li>
+            </ul>
+        </div>
+
+        <div class="error-item">
+            <span class="error-code">SyntaxError: Unexpected token</span>
+            <p><strong>Artinya:</strong> Ada penulisan kode yang tidak sesuai aturan bahasa pemrograman.</p>
+            <p><strong>Cara mengatasinya:</strong></p>
+            <ul>
+                <li>Cek tanda kurung, kutip, dan titik koma yang mungkin belum ditutup</li>
+                <li>Perhatikan baris dan kolom yang ditunjukkan pada pesan error</li>
+                <li>Bandingkan dengan contoh kode yang sudah benar</li>
+            </ul>
+        </div>
+
+        <div class="error-item">
+            <span class="error-code">NullPointerException</span>
+            <p><strong>Artinya:</strong> Program mencoba mengakses objek yang belum diberi nilai (masih null).</p>
+            <p><strong>Cara mengatasinya:</strong></p>
+            <ul>
+                <li>Pastikan variabel sudah diinisialisasi sebelum dipakai</li>
+                <li>Tambahkan pengecekan kondisi <code>if (variabel != null)</code></li>
+                <li>Lacak baris yang disebutkan pada stack trace error</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MINI QUIZ ================= -->
+
+<section class="quiz-section scroll-hidden" id="quiz">
+
+    <div class="section-title">
+        <h2>Mini Quiz</h2>
+        <p>Uji sedikit pemahamanmu tentang dunia programming.</p>
+    </div>
+
+    <form class="quiz-box" id="quizForm">
+
+        <p class="quiz-question">1. Bahasa apa yang paling cocok untuk AI &amp; Machine Learning?</p>
+        <label class="quiz-option"><input type="radio" name="q1" value="wrong">Java</label>
+        <label class="quiz-option"><input type="radio" name="q1" value="correct">Python</label>
+        <label class="quiz-option"><input type="radio" name="q1" value="wrong">HTML</label>
+
+        <p class="quiz-question">2. Bahasa apa yang bisa berjalan langsung di browser?</p>
+        <label class="quiz-option"><input type="radio" name="q2" value="wrong">C++</label>
+        <label class="quiz-option"><input type="radio" name="q2" value="correct">JavaScript</label>
+        <label class="quiz-option"><input type="radio" name="q2" value="wrong">Java</label>
+
+        <p class="quiz-question">3. Bahasa apa yang punya kontrol memori manual lewat pointer?</p>
+        <label class="quiz-option"><input type="radio" name="q3" value="correct">C++</label>
+        <label class="quiz-option"><input type="radio" name="q3" value="wrong">Python</label>
+        <label class="quiz-option"><input type="radio" name="q3" value="wrong">JavaScript</label>
+
+        <button type="submit" class="run-btn quiz-submit">
+            <i class="fa-solid fa-play"></i> Submit Jawaban
+        </button>
+
+        <p class="quiz-result" id="quizResult"></p>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FEATURED INSPIRATION ================= -->
+
+<section class="featured scroll-hidden">
+
+    <div class="section-title">
+        <h2>Featured Inspiration</h2>
+
+        <p>
+            Explore simple yet creative project ideas that can inspire your
+            programming journey.
+        </p>
+    </div>
+
+    <div class="featured-grid">
+
+        <div class="featured-card">
+
+            <img src="images/project1.png" alt="Portfolio Website">
+
+            <div class="featured-content">
+
+                <span>Web Development</span>
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    Build your own portfolio website to showcase
+                    your projects and skills professionally.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="featured-card">
+
+            <img src="images/project2.png" alt="Calculator">
+
+            <div class="featured-content">
+
+                <span>Beginner Project</span>
+
+                <h3>Modern Calculator</h3>
+
+                <p>
+                    Practice JavaScript by creating
+                    a responsive calculator with a modern UI.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WHY CHOOSE ================= -->
+
+<section class="why-us scroll-hidden">
+
+    <div class="section-title">
+
+        <h2>Why Nusantara Coder?</h2>
+
+        <p>
+            Everything beginners need in one place.
+        </p>
+
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Project Ideas</h3>
+
+            <p>
+                Discover creative programming projects that help
+                improve your coding skills.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>Programming Guides</h3>
+
+            <p>
+                Learn programming concepts using
+                simple explanations and examples.
+            </p>
+
+        </div>
+
+
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-bug"></i>
+
+            <h3>Problem Solver</h3>
+
+            <p>
+                Find solutions for common programming
+                problems experienced by beginners.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROBLEM SOLVER ================= -->
+
+<section id="problem" class="faq scroll-hidden">
+
+<h2>Common Problems & Solutions</h2>
+
+<p class="faq-desc">
+
+Problems that are frequently experienced by beginner programmers.
+
+</p>
+
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can't Understand Error Messages</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+<strong>Problem</strong><br>
+
+Many beginners panic when they see an error message.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Solution</strong><br>
+
+Read the error carefully, identify the line number,
+then search for the meaning before changing your code.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Don't Know Where to Start</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+<strong>Problem</strong><br>
+
+Too many programming languages make beginners confused.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Solution</strong><br>
+
+Start with HTML, CSS, JavaScript,
+then continue to Python or Java.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>No Project Ideas</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+<strong>Problem</strong><br>
+
+Many beginners don't know what project to build.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Solution</strong><br>
+
+Try making a calculator,
+to-do list,
+weather app,
+or portfolio website.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Losing Motivation</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+<strong>Problem</strong><br>
+
+Feeling like your coding skills never improve.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Solution</strong><br>
+
+Build one small project every week
+instead of aiming for a huge application.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta scroll-hidden">
+
+<h2>
+
+Start Your Coding Journey Today
+
+</h2>
+
+<p>
+
+Small projects create great developers.
+
+</p>
+
+<a href="#languages">
+
+Explore Languages
+
+</a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Nusantara Coder Inspiration
+
+</p>
+
+<p>
+
+Built with ❤️ by Alfin Firnanda
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

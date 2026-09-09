@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ - Nusantara Coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=PlayFair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <i class="fa-solid fa-code"></i>
+          Nusantara Coder
+        </div>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="problem-solver.html">Problem Solver</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="nav-cta">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="detail-hero scroll-hidden">
+        <i class="fa-solid fa-code" style="color: #3498db;"></i>
+        <h1>C++</h1>
+        <p>
+          Bahasa performa tinggi yang jadi andalan untuk game engine, software desktop berat, dan sistem operasi
+        </p>
+      </section>
+
+      <section class="detail-section">
+        
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-bolt" style="color: #3498db;"></i>
+            <h3>Mengapa Memilih C++?</h3>
+          </div>
+          <p class="problem-desc">
+            C++ memberikan kontrol penuh atas memori dan manajemen sumber daya hardware, menjadikannya pilihan utama di industri yang membutuhkan kecepatan eksekusi tinggi
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Performa Ekstrem</h4>
+              <p>Dikompilasi langsung ke bahasa mesin sehingga menghasilkan eksekusi kode yang sangat cepat</p>
+            </div>
+            <div class="idea-card">
+              <h4>Kontrol Memori Penuh</h4>
+              <p>Mendukung alokasi memori manual (pointer) untuk efisiensi sistem secara mendalam</p>
+            </div>
+            <div class="idea-card">
+              <h4>Standar Industri</h4>
+              <p>Digunakan sebagai fondasi Game Engine populer (Unreal Engine), OS, hingga software seperti Photoshop</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-laptop-code" style="color: #d7893f;"></i>
+            <h3>Uji Coba Kode C++</h3>
+          </div>
+          <p class="problem-desc">
+            Klik tombol di bawah ini untuk melihat simulasi hasil eksekusi program C++ secara langsung:
+          </p>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Konversi Suhu
+              </div>
+              <button class="run-btn" onclick="runCode('cpp', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "--- KONVERSI SUHU ---" &lt;&lt; endl;
+    float celcius = 30.0;
+    float fahrenheit = (celcius * 9/5) + 32;
+
+    cout &lt;&lt; "Suhu Celcius   : " &lt;&lt; celcius &lt;&lt; " C" &lt;&lt; endl;
+    cout &lt;&lt; "Suhu Fahrenheit: " &lt;&lt; fahrenheit &lt;&lt; " F" &lt;&lt; endl;
+    return 0;
+}</code></pre>
+
+            <div class="code-output" style="display: none;">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+                                                                                                                                                                                    <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-map-location-dot" style="color: #2ecc71;"></i>
+            <h3>Roadmap Belajar C++</h3>
+          </div>
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>1. Dasar & Memori</h4>
+              <p>Pelajari sintaks dasar, pointer, alokasi memori, struktur data dasar, dan fungsi</p>
+            </div>
+            <div class="idea-card">
+              <h4>2. Konsep OOP</h4>
+              <p>Kuasai Object-Oriented Programming (Class, Encapsulation, Inheritance, dan Polymorphism)</p>
+            </div>
+            <div class="idea-card">
+              <h4>3. Proyek & Library</h4>
+              <p>Coba buat proyek nyata menggunakan library grafis 2D/3D seperti SFML, SDL, atau Unreal Engine</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link scroll-hidden">&larr; Kembali ke Home</a>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Nusantara Coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=PlayFair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <i class="fa-solid fa-code"></i>
+          Nusantara Coder
+        </div>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="problem-solver.html">Problem Solver</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="nav-cta">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="detail-hero scroll-hidden">
+        <i class="fa-brands fa-js" style="color: #f1c40f;"></i>
+        <h1>JavaScript</h1>
+        <p>
+          Bahasa yang menghidupkan website — dari animasi interaktif sederhana hingga aplikasi web kompleks skala besar
+        </p>
+      </section>
+
+      <section class="detail-section">
+        
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-star" style="color: #f1c40f;"></i>
+            <h3>Mengapa Memilih JavaScript?</h3>
+          </div>
+          <p class="problem-desc">
+            JavaScript adalah satu-satunya bahasa pemrograman yang berjalan secara *native* langsung di browser. Tanpa JavaScript, website modern hanya akan menjadi halaman statis tanpa interaksi
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Native di Browser</h4>
+              <p>Dapat dieksekusi langsung oleh seluruh browser tanpa instalasi tambahan</p>
+            </div>
+            <div class="idea-card">
+              <h4>Full-Stack Superpower</h4>
+              <p>Bisa digunakan di Frontend (browser) maupun Backend (server) menggunakan Node.js</p>
+            </div>
+            <div class="idea-card">
+              <h4>Ekosistem Raksasa</h4>
+              <p>Didukung ribuan framework populer seperti React, Vue, Next.js, dan React Native</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-laptop-code" style="color: #d7893f;"></i>
+            <h3>Uji Coba Kode JavaScript</h3>
+          </div>
+          <p class="problem-desc">
+            Uji eksekusi logika JavaScript secara langsung di browser kamu dengan menekan tombol di bawah:
+          </p>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Simulasi Tema Web
+              </div>
+              <button class="run-btn" onclick="runCode('javascript', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">console.log("--- SIMULASI TEMA WEB ---");
+let isDarkMode = true;
+
+if (isDarkMode) {
+    console.log("Status: Dark Mode Aktif (Latar belakang gelap)");
+} else {
+    console.log("Status: Light Mode Aktif (Latar belakang terang)");
+}</code></pre>
+
+            <div class="code-output" style="display: none;">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-map-location-dot" style="color: #3498db;"></i>
+            <h3>Roadmap Belajar JavaScript</h3>
+          </div>
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>1. Dasar & DOM</h4>
+              <p>Pahami variabel, function, array, object, serta manipulasi elemen HTML lewat DOM handling</p>
+            </div>
+            <div class="idea-card">
+              <h4>2. Asynchronous JS</h4>
+              <p>Pelajari konsep Promises, Async/Await, dan cara mengambil data dari REST API menggunakan <code>fetch()</code></p>
+            </div>
+            <div class="idea-card">
+              <h4>3. Framework & Backend</h4>
+              <p>Lanjutkan ke framework modern seperti React/Vue untuk Web UI, atau Node.js untuk aplikasi Backend</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link scroll-hidden">&larr; Kembali ke Home</a>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

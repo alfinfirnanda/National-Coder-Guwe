@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspiration - Nusantara Coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=PlayFair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <i class="fa-solid fa-code"></i>
+          Nusantara Coder
+        </div>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="problem-solver.html">Problem Solver</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="nav-cta">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="detail-hero scroll-hidden">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h1>Inspirasi Proyek</h1>
+        <p>
+          Cara terbaik memahami konsep coding adalah dengan langsung membangun
+          proyek nyata. Kamu juga bisa langsung mencoba menjalankan kode
+          programnya di bawah ini!
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-brands fa-java" style="color: #d7893f"></i>
+            <h3>1. Java — Orientasi Objek & Logika Terstruktur</h3>
+          </div>
+          <p class="problem-desc">
+            Proyek Java sangat cocok untuk melatih pemahaman struktur data,
+            logika transaksi, serta paradigma Object-Oriented Programming (OOP)
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Aplikasi Kasir CLI</h4>
+              <p>
+                Melatih logika kondisi, kalkulasi total belanja, dan perhitungan
+                kembalian lewat terminal
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Manajemen To-Do List</h4>
+              <p>
+                Belajar menyimpan, membaca, dan menghapus daftar tugas berbasis
+                File I/O
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Game Tebak Angka</h4>
+              <p>
+                Mengasah logika perulangan (while) dan penggunaan library acak
+                (Random)
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Kasir Sederhana
+              </div>
+              <button class="run-btn" onclick="runCode('java', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">public class Main {
+    public static void main(String[] args) {
+        System.out.println(" PROGRAM KASIR SIMULASI ");
+        int totalBelanja = 50000;
+        int uangDibayar = 100000;
+        int kembalian = uangDibayar - totalBelanja;
+        
+        System.out.println("Total Belanja : Rp " + totalBelanja);
+        System.out.println("Uang Dibayar  : Rp " + uangDibayar);
+        System.out.println("Kembalian     : Rp " + kembalian);
+    }
+}</code></pre>
+
+            <div class="code-output" style="display: none">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-brands fa-js" style="color: #f1c40f"></i>
+            <h3>2. JavaScript — Interaktivitas Web & DOM</h3>
+          </div>
+          <p class="problem-desc">
+            Fokus pada manipulasi elemen HTML/CSS secara langsung di browser dan
+            penanganan aksi dari pengguna
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Kalkulator Web</h4>
+              <p>
+                Menghubungkan tombol angka HTML dengan logika matematika di
+                JavaScript.
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Task Tracker</h4>
+              <p>
+                Menambah, menandai selesai, dan menyimpan data di LocalStorage
+                browser.
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Dark Mode Switcher</h4>
+              <p>
+                Ubah skema warna seluruh halaman secara instan dengan manipulasi
+                class CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Dark Mode
+                Switcher
+              </div>
+              <button class="run-btn" onclick="runCode('javascript', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">console.log("--- SIMULASI TEMA WEB ---");
+let isDarkMode = true;
+
+if (isDarkMode) {
+    console.log("Status: Dark Mode Aktif (Latar belakang gelap)");
+} else {
+    console.log("Status: Light Mode Aktif (Latar belakang terang)");
+}</code></pre>
+
+            <div class="code-output" style="display: none">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-brands fa-cplusplus" style="color: #3498db"></i>
+            <h3>3. C++ — Performa & Manajemen Memori</h3>
+          </div>
+          <p class="problem-desc">
+            Melatih ketelitian logika dasar, penggunaan array, serta pemrosesan
+            algoritma yang cepat dan efisien
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Game Tic-Tac-Toe</h4>
+              <p>
+                Memahami konsep Array 2 Dimensi dan pengondisian giliran pemain
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Konverter Suhu</h4>
+              <p>
+                Program perhitungan rumus matematika konversi Celcius,
+                Fahrenheit, dan Kelvin
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Simulasi Antrian Bank</h4>
+              <p>
+                Menerapkan konsep struktur data Queue (First-In, First-Out)
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Konversi Suhu
+              </div>
+              <button class="run-btn" onclick="runCode('cpp', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    float celcius = 30.0;
+    float fahrenheit = (celcius * 9.0 / 5.0) + 32;
+
+    cout &lt;&lt; "--- KONVERSI SUHU ---" &lt;&lt; endl;
+    cout &lt;&lt; "Suhu Celcius   : " &lt;&lt; celcius &lt;&lt; " C" &lt;&lt; endl;
+    cout &lt;&lt; "Suhu Fahrenheit: " &lt;&lt; fahrenheit &lt;&lt; " F" &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+            <div class="code-output" style="display: none">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-brands fa-python" style="color: #2ecc71"></i>
+            <h3>4. Python — Otomasi & Analisis Data</h3>
+          </div>
+          <p class="problem-desc">
+            Sintaks yang simpel membuat Python sangat ampuh untuk eksperimen
+            cepat, pembuatan bot, hingga pengolahan data
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Web Scraper Informasi</h4>
+              <p>
+                Mengambil data berita atau harga secara otomatis dari situs web
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Chatbot Otomatis</h4>
+              <p>
+                Bot sederhana yang merespons percakapan berdasarkan kata kunci
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Analisis File CSV</h4>
+              <p>
+                Membaca data tabel dan menghitung nilai rata-rata menggunakan
+                Pandas
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Chatbot
+                Interaktif
+              </div>
+              <button class="run-btn" onclick="runCode('python', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">print("--- CHATBOT SIMULASI ---")
+pesan = "halo"
+
+if "halo" in pesan:
+    print("Bot: Halo juga! Ada yang bisa saya bantu dalam belajar coding?")
+elif "keluar" in pesan:
+    print("Bot: Sampai jumpa lagi!")
+else:
+    print("Bot: Maaf, saya belum paham.")</code></pre>
+
+            <div class="code-output" style="display: none">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link scroll-hidden"
+          >&larr; Kembali ke Home</a
+        >
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

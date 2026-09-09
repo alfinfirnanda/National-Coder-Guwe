@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python - Nusantara Coder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=PlayFair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+<div class="scroll-progress-bar" id="scrollProgressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <i class="fa-solid fa-code"></i>
+          Nusantara Coder
+        </div>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="problem-solver.html">Problem Solver</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="nav-cta">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="detail-hero scroll-hidden">
+        <i class="fa-brands fa-python" style="color: #2ecc71"></i>
+        <h1>Python</h1>
+        <p>
+          Bahasa paling ramah pemula, sekaligus jadi tulang punggung dunia AI,
+          data science, dan automation modern.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-star" style="color: #2ecc71"></i>
+            <h3>Mengapa Memilih Python?</h3>
+          </div>
+          <p class="problem-desc">
+            Sintaks Python sangat bersih dan mirip dengan bahasa Inggris biasa.
+            Python digunakan di balik layar perusahaan raksasa seperti
+            Instagram, Netflix, hingga Google
+          </p>
+
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>Sintaks Intuitive</h4>
+              <p>
+                Menulis logika kompleks dengan baris kode yang jauh lebih
+                sedikit dibanding bahasa lain
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Raja Kecerdasan Buatan</h4>
+              <p>
+                Standar utama dalam pengembangan Machine Learning, Deep
+                Learning, dan AI modern
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>Otomasi Serba Bisa</h4>
+              <p>
+                Cocok untuk membuat script scraping, bot otomatisasi, hingga
+                backend API web yang ringkas
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-laptop-code" style="color: #d7893f"></i>
+            <h3>Uji Coba Kode Python</h3>
+          </div>
+          <p class="problem-desc">
+            Klik tombol di bawah ini untuk melihat simulasi eksekusi kode Python
+            secara langsung di terminal web:
+          </p>
+
+          <div class="solution-box">
+            <div class="solution-header">
+              <div class="solution-label">
+                <i class="fa-solid fa-code"></i> Contoh Program: Bot Respons
+                Otomatis
+              </div>
+              <button class="run-btn" onclick="runCode('python', this)">
+                <i class="fa-solid fa-play"></i> Jalankan Kode
+              </button>
+            </div>
+
+            <pre><code class="code-block">print("--- CHATBOT SIMULASI ---")
+pesan = "halo"
+
+if "halo" in pesan:
+    print("Bot: Halo juga! Ada yang bisa saya bantu dalam belajar coding?")
+elif "keluar" in pesan:
+    print("Bot: Sampai jumpa lagi!")
+else:
+    print("Bot: Maaf, saya belum paham.")</code></pre>
+
+            <div class="code-output" style="display: none">
+              <div class="output-header">Hasil Output Terminal:</div>
+              <pre class="output-text">Memproses kode...</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-card scroll-hidden">
+          <div class="problem-title">
+            <i class="fa-solid fa-map-location-dot" style="color: #3498db"></i>
+            <h3>Roadmap Belajar Python</h3>
+          </div>
+          <div class="idea-grid">
+            <div class="idea-card">
+              <h4>1. Pondasi Dasar</h4>
+              <p>
+                Kuasai variabel, tipe data (list, dict, tuple), perulangan
+                (loops), pengondisian, dan fungsi (functions)
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>2. Library Popular</h4>
+              <p>
+                Mulai eksplorasi library <code>pandas</code> untuk olah data dan
+                <code>requests</code> untuk komunikasi web API
+              </p>
+            </div>
+            <div class="idea-card">
+              <h4>3. Spesialisasi</h4>
+              <p>
+                Pilih jalur minatmu: Web Dev (Django/Flask), Automation
+                Scripting, atau AI & Data Science (Scikit-Learn/TensorFlow)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link scroll-hidden"
+          >&larr; Kembali ke Home</a
+        >
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
